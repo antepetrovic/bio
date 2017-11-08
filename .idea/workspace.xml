@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6bd41aa3-2a5b-427b-a1b9-d5888d4a965b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_body.scss" afterPath="$PROJECT_DIR$/css/_body.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -176,12 +173,12 @@
       <workItem from="1510001160735" duration="13923000" />
       <workItem from="1510129869088" duration="217000" />
       <workItem from="1510130116707" duration="15538000" />
-      <workItem from="1510161542564" duration="141000" />
+      <workItem from="1510161542564" duration="197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47861000" />
+    <option name="totallyTimeSpent" value="47917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="315" y="23" width="965" height="773" extended-state="0" />
