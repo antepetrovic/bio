@@ -1,8 +1,51 @@
+@charset "UTF-8";
+@keyframes Fade {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0; }
   body a {
     text-decoration: none; }
+
+main {
+  width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    main {
+      width: 80%;
+      margin-left: 10%; } }
+
+#first {
+  opacity: 0; }
+
+#first.animateMe {
+  animation: Fade 3s linear 1s forwards; }
+
+#second {
+  opacity: 0; }
+
+#second.animateMe {
+  animation: Fade 2s linear 1s forwards; }
+
+#third {
+  opacity: 0; }
+
+#third.animateMe {
+  animation: Fade 2s linear 1s forwards; }
+
+#fourth {
+  opacity: 0; }
+
+#fourth.animateMe {
+  animation: Fade 2s linear 1s forwards; }
 
 .ownerSection {
   padding-top: 40px;
@@ -11,31 +54,59 @@ body {
   text-align: center; }
   .ownerSection h1 {
     margin: 0;
-    font-size: 26px;
-    color: #1E3544;
-    font-weight: 300; }
+    margin-bottom: 38px;
+    font-size: 36px;
+    font-weight: 100;
+    color: #1e3443; }
+    @media only screen and (min-width: 768px) {
+      .ownerSection h1 {
+        font-size: 48px; } }
   .ownerSection p {
-    font-size: 18px;
-    color: #798D9B;
+    font-size: 16px;
+    color: #798d9b;
     margin-left: 10%;
     width: 80%;
-    font-family: "Helvetica";
-    line-height: 1.3;
+    line-height: 1.75;
     font-weight: 100; }
-
-.ownerSection:hover {
-  background: linear-gradient(#60CE80, #9be26b); }
-  .ownerSection:hover p {
-    color: #2E343B; }
+    @media only screen and (min-width: 768px) {
+      .ownerSection p {
+        width: 65%;
+        margin-left: 17.5%; } }
+  .ownerSection img {
+    margin-bottom: 40px; }
 
 #img1 {
-  margin-left: 20%;
   width: 60%; }
+  @media only screen and (min-width: 768px) {
+    #img1 {
+      width: 30%;
+      margin-bottom: 150px; } }
+
+#certifikat {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    #certifikat {
+      display: inline-block;
+      margin-left: 10%;
+      margin-bottom: 100px;
+      width: 20%; } }
 
 .natureImg {
   width: 100%;
   margin-top: -20px; }
 
+@media only screen and (min-width: 768px) {
+  #mainText:after {
+    content: "U današnjem užurbanom svijetu utemeljenom na dvojbenim vrijednostima, čovjekova istinska bit potpuno je zanemarena. Živjeti uravnoteženo, a time i zdravo, poštujući zakone prirode i univerzalni sklad čiji je čovjek neraskidivi dio, predstavlja pravi izazov. "; }
+
+  #metodaText:after {
+    content: "Terapija ima cjelovit, sveobuhvatan i blagotvoran učinak na čovjeka te pomaže u psihofizičkom iscjeljenju i u krajnjem cilju – poboljšanju kvalitete života. \a     Sve što živi (čovjek, životinja ili biljka) posjeduje bioenergiju. Do bolesti dolazi kad je ona u disbalansu ili je blokirana u svom prirodnom stanju ili protoku. Za uspostavu prirodnog stanja i protoka bioenergije pobrinut će se iskusni bioterapeuti."; }
+
+  #bioenergijaText:after {
+    content: "Došlo se najzad do subatomskih čestica i otvorio se jedan tajanstveni svijet u kome je sve vibriralo\a      na finijim razinama, u čistoj energiji. Mi smo energija, naš je svijet energija, i naša misao, i djela, sve ono što\a       jesmo, mislimo ili činimo, vibrira finim vibracijama izvan dosega naših fizičkih čula. Univerzum je velika Misao,\a        a čovjek je njen dio. Moderni kvantni znanstvenici rekli bi da je sve val, frekvencija, a materijalni svijet samo\a         je gruba slika, hologram u jednom velikom energetskom polju.\a"; }
+
+  #omeniText:after {
+    content: "Vezano za to, završila sam mnoge seminare, tečajeve, učenja i razne tipove edukacija..\a     Nakon svih do sada stečenih znanja i spoznaja najdublju povezanost osjećam  s bioterapeutskim iscjeljivanjem po metodi\a     Zdenka Domančića.\a     Sada, nakon kompletne edukacije iz tog područja i stjecanja statusa licenciranog terapeuta, s velikim poštovanjem\a     i posvećenošću rado pomažem svima koji žele i trebaju pomoć."; } }
 header {
   position: absolute;
   top: 0;
@@ -54,7 +125,8 @@ nav {
     padding-left: 0;
     text-align: center; }
   nav li {
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 20px;
     list-style-type: none;
     margin-bottom: 5px; }
 
@@ -193,12 +265,12 @@ footer {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  background: #1E3544; }
+  background: #1e3443; }
   footer h3 {
     font-weight: 300;
     color: #fff; }
 
-footer .title {
+footer .title2 {
   font-size: 26px; }
 footer section h3 {
   margin-top: 20px;
