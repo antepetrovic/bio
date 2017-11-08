@@ -33,19 +33,19 @@ main {
   opacity: 0; }
 
 #second.animateMe {
-  animation: Fade 2s linear 1s forwards; }
+  animation: Fade 2s linear forwards; }
 
 #third {
   opacity: 0; }
 
 #third.animateMe {
-  animation: Fade 2s linear 1s forwards; }
+  animation: Fade 2s linear forwards; }
 
 #fourth {
   opacity: 0; }
 
 #fourth.animateMe {
-  animation: Fade 2s linear 1s forwards; }
+  animation: Fade 2s linear forwards; }
 
 .ownerSection {
   padding-top: 40px;

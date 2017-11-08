@@ -28,7 +28,7 @@ main {
 }
 
 #second.animateMe {
-  animation: Fade 2s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 #third {
@@ -36,7 +36,7 @@ main {
  }
 
 #third.animateMe {
-  animation: Fade 2s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 #fourth {
@@ -44,7 +44,7 @@ main {
 }
 
 #fourth.animateMe {
-  animation: Fade 2s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 
