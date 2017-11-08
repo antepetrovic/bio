@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    var fourth = $("#fourth").position();
+    var third = $("#third").position();
+    var second = $("#second").position();
+
+
     $("#nav-icon").click(function(){
         $(this).toggleClass('open');
         $( "nav" ).slideToggle("slow");
@@ -21,7 +26,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#second");
         $(window).scroll(function () {
-            if($(window).scrollTop() > 200) {
+            if($(window).scrollTop() > second.top - 300) {
                 element.addClass("animateMe");
             }
 
@@ -31,7 +36,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#third");
         $(window).scroll(function () {
-            if($(window).scrollTop() > 700) {
+            if($(window).scrollTop() > third.top - 300) {
                 element.addClass("animateMe");
             }
 
@@ -41,7 +46,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#fourth");
         $(window).scroll(function () {
-            if($(window).scrollTop() > 1400) {
+            if($(window).scrollTop() > fourth.top - 300) {
                 element.addClass("animateMe");
             }
 
@@ -50,5 +55,5 @@ $(document).ready(function(){
 
 });
 var a = $("#fourth").position();
-console.log(a);
+console.log(a.top);
 

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bd41aa3-2a5b-427b-a1b9-d5888d4a965b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_body.scss" afterPath="$PROJECT_DIR$/css/_body.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_footer.scss" afterPath="$PROJECT_DIR$/css/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_navigation.scss" afterPath="$PROJECT_DIR$/css/_navigation.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_variables.scss" afterPath="$PROJECT_DIR$/css/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,8 +51,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+            <state relative-caret-position="542">
+              <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -181,12 +172,12 @@
       <workItem from="1509970689612" duration="2500000" />
       <workItem from="1510001160735" duration="13923000" />
       <workItem from="1510129869088" duration="217000" />
-      <workItem from="1510130116707" duration="13443000" />
+      <workItem from="1510130116707" duration="14213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45625000" />
+    <option name="totallyTimeSpent" value="46395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="315" y="23" width="965" height="773" extended-state="0" />
@@ -475,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        <state relative-caret-position="542">
+          <caret line="48" column="53" lean-forward="false" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
           <folding />
         </state>
       </provider>
