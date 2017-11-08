@@ -26,7 +26,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#second");
         $(window).scroll(function () {
-            if($(window).scrollTop() > second.top - 500) {
+            if($(window).scrollTop() > second.top - 600) {
                 element.addClass("animateMe");
             }
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#third");
         $(window).scroll(function () {
-            if($(window).scrollTop() > third.top - 500) {
+            if($(window).scrollTop() > third.top - 600) {
                 element.addClass("animateMe");
             }
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#fourth");
         $(window).scroll(function () {
-            if($(window).scrollTop() > fourth.top - 500) {
+            if($(window).scrollTop() > fourth.top - 600) {
                 element.addClass("animateMe");
             }
 
