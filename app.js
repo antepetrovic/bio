@@ -3,7 +3,7 @@ $(document).ready(function(){
     var third = $("#third").position();
     var second = $("#second").position();
     var screenWidth= $(window).width();
-    console.log(screenWidth);
+
     $("#nav-icon").click(function(){
         $(this).toggleClass('open');
         $( "nav" ).slideToggle("slow");
@@ -52,5 +52,6 @@ $(document).ready(function(){
 
         });
     });
+
 
 });

@@ -5,17 +5,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  @media only screen and (min-width: $videoMax) {
+    width: 80%;
+    margin-left: 10%;
+  }
   a{
     text-decoration: none;
   }
 }
-main {
-  width: 100%;
-  @media only screen and (min-width: $breakLarge) {
-      width: 80%;
-      margin-left: 10%;
-  }
-}
+
 #first {
   opacity: 0;
 }

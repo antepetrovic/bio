@@ -7,15 +7,25 @@ header {
   height: 50px;
   width: 100%;
   color: $white;
+  @media only screen and (min-width: $videoMax) {
+    width: 80%;
+  }
 }
 
 nav {
-  width: 100%;
   position: absolute;
+  width: 100%;
   display: none;
+  z-index: 1;
   top: 0px;
   background: $headerBackground;
+  @media only screen and (min-width: $videoMax) {
+    right: 0;
+    width: 30%;
+    margin-left: 20%;
+  }
   ul {
+    padding-top: 22px;
     padding-left: 0;
     text-align: center;
   }
@@ -25,6 +35,14 @@ nav {
     list-style-type: none;
     margin-bottom: 5px;
   }
+  a {
+    color: inherit;
+  }
+}
+
+nav li:hover {
+  background: rgba(64, 64, 78, 0.5);
+  color: #fff;
 }
 
 #nav-icon {
@@ -44,6 +62,9 @@ nav {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  @media only screen and (min-width: $videoMax) {
+
+  }
 }
 #nav-icon span {
   display: block;
