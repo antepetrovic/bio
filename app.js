@@ -2,7 +2,7 @@ $(document).ready(function(){
     var fourth = $("#fourth").position();
     var third = $("#third").position();
     var second = $("#second").position();
-
+    var screenWidth= $(window).width();
 
     $("#nav-icon").click(function(){
         $(this).toggleClass('open');
@@ -26,7 +26,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#second");
         $(window).scroll(function () {
-            if($(window).scrollTop() > second.top - 350) {
+            if($(window).scrollTop() > second.top - screenWidth) {
                 element.addClass("animateMe");
             }
 
@@ -36,7 +36,7 @@ $(document).ready(function(){
     $(function () {
         var element = $("#third");
         $(window).scroll(function () {
-            if($(window).scrollTop() > third.top - 350) {
+            if($(window).scrollTop() > third.top - screenWidth) {
                 element.addClass("animateMe");
             }
 
@@ -46,14 +46,12 @@ $(document).ready(function(){
     $(function () {
         var element = $("#fourth");
         $(window).scroll(function () {
-            if($(window).scrollTop() > fourth.top - 350) {
+            if($(window).scrollTop() > fourth.top - screenWidth) {
                 element.addClass("animateMe");
             }
 
         });
     });
 
-});
-var a = $("#fourth").position();
-console.log(a.top);
 
+});

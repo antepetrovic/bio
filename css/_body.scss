@@ -5,17 +5,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  @media only screen and (min-width: $videoMax) {
+    width: 80%;
+    margin-left: 10%;
+  }
   a{
     text-decoration: none;
   }
 }
-main {
-  width: 100%;
-  @media only screen and (min-width: $breakLarge) {
-      width: 80%;
-      margin-left: 10%;
-  }
-}
+
 #first {
   opacity: 0;
 }
@@ -28,7 +26,7 @@ main {
 }
 
 #second.animateMe {
-  animation: Fade 2s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 #third {
@@ -36,7 +34,7 @@ main {
  }
 
 #third.animateMe {
-  animation: Fade 2s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 #fourth {
@@ -44,7 +42,7 @@ main {
 }
 
 #fourth.animateMe {
-  animation: Fade 2s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 
