@@ -1,62 +1,85 @@
 @import "variables";
+@import "frames";
 
 header {
-  position: absolute;
+  position: fixed;
+  background: $headerBackgroundTreehouseTransparent;
   cursor: pointer;
-  height: 50px;
   width: 100%;
-  color: $white;
-  @media only screen and (min-width: $breakMedium) {
-    position: fixed;
-  }
+  z-index: 1000;
+  transition: all 1s;
   @media only screen and (min-width: $videoMax) {
     width: 80%;
     margin-left: 10%;
-
   }
 }
 
-nav {
-  position: absolute;
-  width: 100%;
-  display: none;
-  z-index: 1;
-  top: 0px;
-  background: $headerBackground;
+.logoDiv {
   @media only screen and (min-width: $breakMedium) {
-    z-index: 100000;
-    position: fixed;
-    display: flex;
+    width: 15%;
+    display: inline-block;
   }
-  @media only screen and (min-width: $videoMax) {
-    right: 0;
-    width: 30%;
-    margin-left: 20%;
+}
+
+.navDiv {
+  @media only screen and (min-width: $breakMedium) {
+    width: 81%;
+    margin-left: 2%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+nav {
+  img {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    border-radius: 3px;
+    @media only screen and (min-width: $breakSmall) {
+      width: 120px;
+    }
+  }
+  h1 {
+    color: $white;
+    display: none;
+    @media only screen and (min-width: $breakMedium) {
+      display: block;
+      margin: 0;
+    }
   }
   ul {
-    margin-top: 0;
-    padding-top: 10px;
-    padding-left: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    display: none;
     text-align: center;
     @media only screen and (min-width: $breakMedium) {
+      margin-bottom: 0;
+      margin-top: 5px;
       display: flex;
+      justify-content: space-around;
     }
   }
   li {
-    font-weight: 300;
-    font-size: 20px;
-    list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    @media only screen and (min-width: $breakMedium) {
+      display: inline-block;
+      margin-right: 7px;
+    }
+    a {
+      font-size: 20px;
+      color: $headerLinksTreehouse;
+      @media only screen and (min-width: $breakMedium) {
+        font-size: 17px;
+      }
+    }
   }
-  a {
-    color: inherit;
-  }
+}
+.darkHeader {
+  background-color: $headerBackgroundTreehouse;
+  transition: all 1s;
 }
 
-nav li:hover {
-  background: rgba(64, 64, 78, 0.5);
-  color: #fff;
-}
 
 #nav-icon {
   z-index: 10000;
@@ -129,12 +152,4 @@ nav li:hover {
   width: 0;
   left: 50%;
 }
-header {
-  h1 {
-    margin: 10px 0 0 10px;
-    display: inline-block;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
-  }
-}
+

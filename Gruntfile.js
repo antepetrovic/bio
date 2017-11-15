@@ -24,8 +24,8 @@ module.exports = function(grunt) {
 
       watch: {
           css: {
-              files: ['css/main.css'],
-              tasks: ['cssmin']
+              files: ['css/main.css', 'app.js'],
+              tasks: ['cssmin', 'uglify']
           }
 
       }
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 
 
   // Default task(s).
-  grunt.registerTask('default', ['cssmin', 'uglify']);
+  grunt.registerTask('default', ['cssmin', 'uglify','watch']);
 
 };
 

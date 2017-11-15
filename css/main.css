@@ -10,6 +10,17 @@
     opacity: 0.75; }
   100% {
     opacity: 1; } }
+@keyframes FadeHeaderColor {
+  0% {
+    background: rgba(63, 72, 79, 0); }
+  25% {
+    background: rgba(63, 72, 79, 0.25); }
+  50% {
+    background: rgba(63, 72, 79, 0.5); }
+  75% {
+    background: rgba(63, 72, 79, 0.75); }
+  100% {
+    background: #3f484f; } }
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0; }
@@ -18,7 +29,6 @@ body {
 
 @media only screen and (min-width: 1200px) {
   main {
-    margin-top: 40px;
     width: 80%;
     margin-left: 10%; } }
 
@@ -27,7 +37,7 @@ body {
   margin-bottom: 40px; }
 
 #first.animateMe {
-  animation: Fade 3s linear 1s forwards; }
+  animation: Fade 2s linear forwards; }
 
 #second {
   opacity: 0; }
@@ -136,56 +146,95 @@ body {
       width: 20%;
       margin-bottom: 100px; } }
 
+@keyframes Fade {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+@keyframes FadeHeaderColor {
+  0% {
+    background: rgba(63, 72, 79, 0); }
+  25% {
+    background: rgba(63, 72, 79, 0.25); }
+  50% {
+    background: rgba(63, 72, 79, 0.5); }
+  75% {
+    background: rgba(63, 72, 79, 0.75); }
+  100% {
+    background: #3f484f; } }
 header {
-  position: absolute;
+  position: fixed;
+  background: rgba(63, 72, 79, 0.8);
   cursor: pointer;
-  height: 50px;
   width: 100%;
-  color: #fff; }
-  @media only screen and (min-width: 768px) {
-    header {
-      position: fixed; } }
+  z-index: 1000;
+  transition: all 1s; }
   @media only screen and (min-width: 1200px) {
     header {
       width: 80%;
       margin-left: 10%; } }
 
-nav {
-  position: absolute;
-  width: 100%;
-  display: none;
-  z-index: 1;
-  top: 0px;
-  background: rgba(64, 64, 78, 0.4); }
-  @media only screen and (min-width: 768px) {
-    nav {
-      z-index: 100000;
-      position: fixed;
-      display: flex; } }
-  @media only screen and (min-width: 1200px) {
-    nav {
-      right: 0;
-      width: 30%;
-      margin-left: 20%; } }
-  nav ul {
-    margin-top: 0;
-    padding-top: 10px;
-    padding-left: 0;
-    text-align: center; }
-    @media only screen and (min-width: 768px) {
-      nav ul {
-        display: flex; } }
-  nav li {
-    font-weight: 300;
-    font-size: 20px;
-    list-style-type: none;
-    margin-bottom: 5px; }
-  nav a {
-    color: inherit; }
+@media only screen and (min-width: 768px) {
+  .logoDiv {
+    width: 15%;
+    display: inline-block; } }
 
-nav li:hover {
-  background: rgba(64, 64, 78, 0.5);
-  color: #fff; }
+@media only screen and (min-width: 768px) {
+  .navDiv {
+    width: 81%;
+    margin-left: 2%;
+    display: inline-block;
+    text-align: center; } }
+
+nav img {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 100px;
+  border-radius: 3px; }
+  @media only screen and (min-width: 320px) {
+    nav img {
+      width: 120px; } }
+nav h1 {
+  color: #fff;
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    nav h1 {
+      display: block;
+      margin: 0; } }
+nav ul {
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  display: none;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    nav ul {
+      margin-bottom: 0;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-around; } }
+nav li {
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 768px) {
+    nav li {
+      display: inline-block;
+      margin-right: 7px; } }
+  nav li a {
+    font-size: 20px;
+    color: #d6dfe1; }
+    @media only screen and (min-width: 768px) {
+      nav li a {
+        font-size: 17px; } }
+
+.darkHeader {
+  background-color: rgba(63, 72, 79, 0.9);
+  transition: all 1s; }
 
 #nav-icon {
   z-index: 10000;
@@ -256,13 +305,6 @@ nav li:hover {
   top: 18px;
   width: 0;
   left: 50%; }
-
-header h1 {
-  margin: 10px 0 0 10px;
-  display: inline-block;
-  font-size: 20px;
-  color: #fff;
-  font-weight: 300; }
 
 @font-face {
   font-family: 'fontello';

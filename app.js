@@ -1,13 +1,14 @@
 $(document).ready(function(){
-
-    var fourth = $("#fourth").position();
-    var third = $("#third").position();
-    var second = $("#second").position();
-    var screenWidth= $(window).width();
-
+    var fourth       = $("#fourth").position();
+    var third        = $("#third").position();
+    var second       = $("#second").position();
+    var screenWidth  = $(window).width();
+    var windowHeight = $( window ).height();
+    console.log(windowHeight);
     $("#nav-icon").click(function(){
         $(this).toggleClass('open');
-        $( "nav" ).slideToggle("slow");
+        $("header").toggleClass('darkHeader');
+        $("ul").height(windowHeight).slideToggle("slow");
     });
 
     $(window).scroll(function(){
@@ -26,17 +27,17 @@ $(document).ready(function(){
 
     $(function () {
         $(window).scroll(function () {
-            if($(window).scrollTop() > second.top) {
+            if($(window).scrollTop() > second.top - 60) {
                 $("#second").addClass("animateMe");
             }
-            if($(window).scrollTop() > third.top) {
+            if($(window).scrollTop() > third.top - 60) {
                 $("#third").addClass("animateMe");
             }
-            if($(window).scrollTop() > fourth.top) {
+            if($(window).scrollTop() > fourth.top - 60) {
                 $("#fourth").addClass("animateMe");
             }
 
         });
     });
-
 });
+

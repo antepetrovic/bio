@@ -12,7 +12,6 @@ body {
 }
 main {
   @media only screen and (min-width: $videoMax) {
-    margin-top: 40px;
     width: 80%;
     margin-left: 10%;
   }
@@ -23,7 +22,7 @@ main {
   margin-bottom: 40px;
 }
 #first.animateMe {
-  animation: Fade 3s linear 1s forwards;
+  animation: Fade 2s linear forwards;
 }
 
 #second {
