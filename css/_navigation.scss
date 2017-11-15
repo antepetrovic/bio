@@ -2,13 +2,17 @@
 
 header {
   position: absolute;
-  top:0;
   cursor: pointer;
   height: 50px;
   width: 100%;
   color: $white;
+  @media only screen and (min-width: $breakMedium) {
+    position: fixed;
+  }
   @media only screen and (min-width: $videoMax) {
     width: 80%;
+    margin-left: 10%;
+
   }
 }
 
@@ -19,15 +23,24 @@ nav {
   z-index: 1;
   top: 0px;
   background: $headerBackground;
+  @media only screen and (min-width: $breakMedium) {
+    z-index: 100000;
+    position: fixed;
+    display: flex;
+  }
   @media only screen and (min-width: $videoMax) {
     right: 0;
     width: 30%;
     margin-left: 20%;
   }
   ul {
-    padding-top: 22px;
+    margin-top: 0;
+    padding-top: 10px;
     padding-left: 0;
     text-align: center;
+    @media only screen and (min-width: $breakMedium) {
+      display: flex;
+    }
   }
   li {
     font-weight: 300;
@@ -62,8 +75,8 @@ nav li:hover {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
-  @media only screen and (min-width: $videoMax) {
-
+  @media only screen and (min-width: $breakMedium) {
+    display: none;
   }
 }
 #nav-icon span {

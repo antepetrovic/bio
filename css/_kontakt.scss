@@ -1,0 +1,34 @@
+@import "variables";
+
+.kontaktDiv {
+  text-align: center;
+  margin-bottom: 60px;
+  a {
+    color: rgb(30, 52, 67);
+  }
+}
+iframe {
+  @media only screen and (min-width: $breakMedium) {
+    margin-bottom: 60px;
+  }
+}
+
+.kontakt {
+  .kontaktDiv {
+    @media only screen and (min-width: $breakMedium) {
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+    }
+
+  }
+  iframe {
+    width: 100%;
+    height: 450px;
+    @media only screen and (min-width: $breakMedium) {
+      display: inline-block;
+      width: 55%;
+
+    }
+  }
+}

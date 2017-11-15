@@ -5,17 +5,22 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  @media only screen and (min-width: $videoMax) {
-    width: 80%;
-    margin-left: 10%;
-  }
+
   a{
     text-decoration: none;
+  }
+}
+main {
+  @media only screen and (min-width: $videoMax) {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
 #first {
   opacity: 0;
+  margin-bottom: 40px;
 }
 #first.animateMe {
   animation: Fade 3s linear 1s forwards;
@@ -77,7 +82,23 @@ body {
     }
   }
   img{
+    margin-top: 40px;
     margin-bottom: 40px;
+  }
+  a {
+    display: block;
+    font-size: 18px;
+    color: $linkColor;
+    margin-top: 15px;
+    margin-left: 10%;
+    width: 80%;
+    line-height: 1.75;
+    font-weight: 100;
+  }
+  a:hover {
+    border-radius: 4px;
+    background: $linkColor;
+    color:$white;
   }
 }
 #img1{
@@ -127,4 +148,26 @@ body {
   }
 
 }
+#licencaDiv {
+  text-align: center;
+  .vlastaPhoto {
+    width: 90%;
+  }
+  @media only screen and (min-width: $breakMedium) {
+    img {
+      display: inline-block;
+    }
+    .vlastaPhoto {
+      width: 60%;
+      margin-right: 5%;
+    }
+    .licencaPhoto {
+      width: 20%;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+
 

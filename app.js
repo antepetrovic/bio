@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var fourth = $("#fourth").position();
     var third = $("#third").position();
     var second = $("#second").position();
@@ -24,34 +25,18 @@ $(document).ready(function(){
     });
 
     $(function () {
-        var element = $("#second");
         $(window).scroll(function () {
-            if($(window).scrollTop() > second.top - screenWidth) {
-                element.addClass("animateMe");
+            if($(window).scrollTop() > second.top) {
+                $("#second").addClass("animateMe");
+            }
+            if($(window).scrollTop() > third.top) {
+                $("#third").addClass("animateMe");
+            }
+            if($(window).scrollTop() > fourth.top) {
+                $("#fourth").addClass("animateMe");
             }
 
         });
     });
-
-    $(function () {
-        var element = $("#third");
-        $(window).scroll(function () {
-            if($(window).scrollTop() > third.top - screenWidth) {
-                element.addClass("animateMe");
-            }
-
-        });
-    });
-
-    $(function () {
-        var element = $("#fourth");
-        $(window).scroll(function () {
-            if($(window).scrollTop() > fourth.top - screenWidth) {
-                element.addClass("animateMe");
-            }
-
-        });
-    });
-
 
 });
