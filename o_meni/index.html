@@ -63,34 +63,6 @@
     </section>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        }
-    }
-
-    $("#nav-icon").click(function(){
-        $(this).toggleClass('open');
-        $( "nav" ).slideToggle("slow");
-    });
-
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-</script>
+<script src="../dist/app.min.js"></script>
 </body>
 </html>

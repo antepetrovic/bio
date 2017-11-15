@@ -362,6 +362,7 @@ nav li {
   content: '\f0aa'; }
 
 footer {
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -376,7 +377,7 @@ footer .title2 {
   font-size: 26px; }
 footer section h3 {
   margin-top: 20px;
-  font-size: 13px; }
+  font-size: 15px; }
 
 #top {
   font-size: 40px;

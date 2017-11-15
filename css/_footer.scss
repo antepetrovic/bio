@@ -63,6 +63,7 @@
 .icon-up-circled:before { content: '\f0aa'; }
 
 footer {
+  padding-bottom: 30px;
   display:flex;
   justify-content: center;
   flex-direction: column;
@@ -81,7 +82,7 @@ footer {
   section {
     h3 {
       margin-top: 20px;
-      font-size: 13px;
+      font-size: 15px;
     }
   }
 }

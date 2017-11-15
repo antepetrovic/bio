@@ -8,33 +8,33 @@
     <link rel="stylesheet" type="text/css" href="../dist/main.min.css">
 </head>
 <body>
-<header>
-    <div id="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav>
-        <div class="logoDiv">
-            <img src="../img/dumancic.png" alt="logo">
+    <header>
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="navDiv">
-            <h1>
-                Vlasta Vučanović
-            </h1>
-            <ul>
-                <li><a href="../">Naslovna</a></li>
-                <li><a href="../bioenergija/">Bioenergija</a></li>
-                <li><a href="../o_meni/">O Meni</a></li>
-                <li><a href="../licenca/">Licenca</a></li>
-                <li><a href="../cesta_pitanja/">Česta Pitanja</a></li>
-                <li><a href="../termini/">Termini</a></li>
-                <li><a href="../kontakt/">Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+        <nav>
+            <div class="logoDiv">
+                <img src="../img/dumancic.png" alt="logo">
+            </div>
+            <div class="navDiv">
+                <h1>
+                    Vlasta Vučanović
+                </h1>
+                <ul>
+                    <li><a href="../">Naslovna</a></li>
+                    <li><a href="../bioenergija/">Bioenergija</a></li>
+                    <li><a href="../o_meni/">O Meni</a></li>
+                    <li><a href="../licenca/">Licenca</a></li>
+                    <li><a href="../cesta_pitanja/">Česta Pitanja</a></li>
+                    <li><a href="../termini/">Termini</a></li>
+                    <li><a href="../kontakt/">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 <main>
     <div id="imgDiv">
         <img src="../img/img7.jpg">
@@ -70,35 +70,7 @@
         <a href="#" class="scrollToTop"><h3 id="top"><span class="icon-up-circled"></span></h3></a>
     </section>
 </footer>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        }
-    }
-
-    $("#nav-icon").click(function(){
-        $(this).toggleClass('open');
-        $( "nav" ).slideToggle("slow");
-    });
-
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../dist/app.min.js"></script>
 </body>
 </html>

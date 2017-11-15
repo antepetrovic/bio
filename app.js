@@ -2,12 +2,11 @@ $(document).ready(function(){
     var fourth       = $("#fourth").position();
     var third        = $("#third").position();
     var second       = $("#second").position();
-    var screenWidth  = $(window).width();
     var windowHeight = $( window ).height();
-    console.log(windowHeight);
+    
     $("#nav-icon").click(function(){
         $(this).toggleClass('open');
-        $("header").toggleClass('darkHeader');
+        $("header").toggleClass("darkHeader");
         $("ul").height(windowHeight).slideToggle("slow");
     });
 
