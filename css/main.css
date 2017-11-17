@@ -596,7 +596,7 @@ footer section h3 {
   text-align: center;
   margin-bottom: 60px; }
   .kontaktDiv a {
-    color: #1e3443; }
+    color: #fff; }
 
 @media only screen and (min-width: 768px) {
   iframe {
@@ -606,9 +606,17 @@ footer section h3 {
   text-align: center; }
   @media only screen and (min-width: 768px) {
     .kontakt .kontaktDiv {
+      font-size: 14px;
+      box-sizing: border-box;
       display: inline-block;
-      width: 30%;
-      vertical-align: top; } }
+      width: 35%;
+      vertical-align: top;
+      background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+      height: 450px;
+      padding-top: 50px; } }
+  @media only screen and (min-width: 1024px) {
+    .kontakt .kontaktDiv {
+      font-size: 16px; } }
   .kontakt iframe {
     border-radius: 3px;
     width: 100%;

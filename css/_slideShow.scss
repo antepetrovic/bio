@@ -10,7 +10,7 @@
   width: 90%;
   height: 250px;
   background: $headerBackground;
-  @media only screen and (min-width: $breakMedium) {
+  @include medium {
     top: 35%;
     width: 350px;
   }

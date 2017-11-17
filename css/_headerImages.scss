@@ -1,95 +1,32 @@
 @import "variables";
+@import "mixins";
 
 
-@mixin headerImageMixin($image) {
-  background-image: url($image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  @media only screen and (min-width: $breakMedium) {
-    height: 650px;
-  }
-}
+
 
 #imgDivBioenergija {
   @include headerImageMixin("../img/img6.jpg");
-  //background-image: url("../img/img6.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
+
 }
 
 #imgDivCestaPitanja {
   @include headerImageMixin("../img/img6.jpg");
-  //background-image: url("../img/img6.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
 }
 
 #imgDivKontakt {
   @include headerImageMixin("../img/img7.jpg");
-  //background-image: url("../img/img7.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
 }
 
 #imgDivLicenca {
   @include headerImageMixin("../img/img6.jpg");
-  //background-image: url("../img/img6.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
 }
 
 #imgDivOmeni {
   @include headerImageMixin("../img/img2.jpg");
-  //background-image: url("../img/img2.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
 }
 #imgDivOmetodi {
   @include headerImageMixin("../img/img2.jpg");
-  //background-image: url("../img/img2.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
 }
 #imgDivTermini {
   @include headerImageMixin("../img/img2.jpg");
-  //background-image: url("../img/img2.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: center;
-  //height: 400px;
-  //@media only screen and (min-width: $breakMedium) {
-  //  height: 650px;
-  //}
 }

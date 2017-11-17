@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "variables";
+@import "mixins";
 
 img {
   max-height: 650px;
@@ -10,11 +11,6 @@ body {
 
   a{
     text-decoration: none;
-  }
-}
-main {
-  @media only screen and (min-width: $videoMax) {
-
   }
 }
 
@@ -63,8 +59,7 @@ main {
     font-size: 36px;
     font-weight: 100;
     color: $titleColor;
-    @media only screen
-    and (min-width: $breakMedium) {
+    @include medium {
       font-size: 48px;
     }
   }
@@ -76,8 +71,7 @@ main {
     width: 80%;
     line-height: 1.75;
     font-weight: 100;
-    @media only screen
-    and (min-width: $breakMedium) {
+    @include medium {
       width: 65%;
       margin-left:17.5%;
     }
@@ -104,7 +98,7 @@ main {
 }
 #img1{
   width: 60%;
-  @media only screen and (min-width: $breakMedium) {
+  @include medium {
     width: 30%;
     margin-bottom: 150px;
 
@@ -112,7 +106,7 @@ main {
 }
 #certifikat {
   display: none;
-  @media only screen and (min-width: $breakMedium) {
+  @include medium {
     display: inline-block;
     margin-left: 10%;
     margin-bottom: 100px;
@@ -123,11 +117,11 @@ main {
 .natureImg {
   width: 100%;
   margin-top: -20px;
-  @media only screen and (min-width: $breakMedium) {
+  @include medium {
     width: 65%;
   }
 }
-@media only screen and (min-width: $breakMedium) {
+@include medium {
   #mainText:after {
     content: "U današnjem užurbanom svijetu utemeljenom na dvojbenim vrijednostima, čovjekova istinska bit potpuno je zanemarena. Živjeti uravnoteženo, a time i zdravo, poštujući zakone prirode i univerzalni sklad čiji je čovjek neraskidivi dio, predstavlja pravi izazov. ";
   }
@@ -157,7 +151,7 @@ main {
   .vlastaPhoto {
     width: 90%;
   }
-  @media only screen and (min-width: $breakMedium) {
+  @include medium {
     img {
       display: inline-block;
     }
@@ -187,7 +181,7 @@ main {
   background: rgba(8, 184, 234, 0.49);
   text-align: center;
   div {
-    @media only screen and (min-width: $breakMedium) {
+    @include medium {
       width: 80%;
       margin-left: 10%;
     }
