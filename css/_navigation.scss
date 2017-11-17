@@ -2,45 +2,51 @@
 @import "frames";
 
 header {
+  color: $white;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
   position: fixed;
-  background: $headerBackgroundTreehouseTransparent;
   cursor: pointer;
   width: 100%;
   z-index: 1000;
   transition: all 1s;
   @media only screen and (min-width: $videoMax) {
-    width: 80%;
-    margin-left: 10%;
+
   }
+  a { color: inherit; }
 }
 
 .logoDiv {
   @media only screen and (min-width: $breakMedium) {
-    width: 15%;
+    margin-top: 5px;
+    width: 20%;
     display: inline-block;
   }
 }
 
 .navDiv {
   @media only screen and (min-width: $breakMedium) {
-    width: 81%;
+    position: absolute;
+    top:0;
+    width: 75%;
     margin-left: 2%;
     display: inline-block;
     text-align: center;
   }
 }
 nav {
+  @media only screen and (min-width: $breakMedium) {
+    height: 70px;
+  }
   img {
     margin-top: 5px;
     margin-left: 5px;
-    width: 100px;
-    border-radius: 3px;
-    @media only screen and (min-width: $breakSmall) {
-      width: 120px;
+    width: 120px;
+    @media only screen and (min-width: $breakMedium) {
+      margin-top: 0;
+      width: 150px;
     }
   }
   h1 {
-    color: $white;
     display: none;
     @media only screen and (min-width: $breakMedium) {
       display: block;
@@ -68,7 +74,6 @@ nav {
     }
     a {
       font-size: 20px;
-      color: $headerLinksTreehouse;
       @media only screen and (min-width: $breakMedium) {
         font-size: 17px;
       }
@@ -85,7 +90,7 @@ nav {
   z-index: 10000;
   width: 30px;
   height: 15px;
-  top: 15px;
+  top: 19px;
   right: 10px;
   float: right;
   position: absolute;

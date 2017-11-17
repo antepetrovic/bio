@@ -7,12 +7,20 @@
     50% {opacity: 0.5;}
     75% {opacity: 0.75;}
     100% {opacity: 1;}
-  }
+}
 
-@keyframes FadeHeaderColor {
-  0% {background: rgba(63, 72, 79, 0)}
-  25% {background: rgba(63, 72, 79, 0.25)}
-  50% {background: rgba(63, 72, 79, 0.5)}
-  75% {background: rgba(63, 72, 79, 0.75)}
-  100% {background: rgba(63, 72, 79, 1)}
+@keyframes FadeOut {
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.75;}
+  100% {opacity: 1;}
+}
+
+@keyframes proba {
+  0% { opacity: 0 }
+  25% { opacity: 1 }
+  50% { opacity: 0 }
+  75% { opacity: 0 }
+  100% { opacity: 0 }
 }

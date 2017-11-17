@@ -76,27 +76,43 @@
     color: $paragraphColor;
   }
 }
-.div1 {
-
+.firstColumn, .secondColumn {
   @media only screen and (min-width: $breakMedium) {
-    display: inline-block;
     width: 49%;
-    margin-left: 0.5%;
+    margin-left: 0.6666%;
+    display: inline-block;
+    float: left;
   }
 }
-@media only screen and (min-width: $videoMax) {
 
-  .div1:nth-child(odd) {
-    margin-left: 1.5%;
-  }
-  .div1:nth-child(even) {
-    margin-left: 0;
-  }
-  .div1:last-child {
-    margin-bottom: 60px;
-  }
-
+.firstSecond {
+  float: left;
 }
+
+
+
+
+//.div1 {
+//
+//  @media only screen and (min-width: $breakMedium) {
+//    display: inline-block;
+//    width: 49%;
+//    margin-left: 0.5%;
+//  }
+//}
+//@media only screen and (min-width: $videoMax) {
+//
+//  .div1:nth-child(odd) {
+//    margin-left: 1.5%;
+//  }
+//  .div1:nth-child(even) {
+//    margin-left: 0;
+//  }
+//  .div1:last-child {
+//    margin-bottom: 60px;
+//  }
+//
+//}
 .title {
   text-align: center;
   font-weight: 100;

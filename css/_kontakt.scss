@@ -14,20 +14,23 @@ iframe {
 }
 
 .kontakt {
+  text-align: center;
   .kontaktDiv {
     @media only screen and (min-width: $breakMedium) {
       display: inline-block;
-      width: 40%;
+      width: 30%;
       vertical-align: top;
     }
 
   }
   iframe {
+    border-radius: 3px;
     width: 100%;
     height: 450px;
     @media only screen and (min-width: $breakMedium) {
       display: inline-block;
-      width: 55%;
+      width: 60%;
+      max-width: 600px;
 
     }
   }
