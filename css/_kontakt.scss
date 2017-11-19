@@ -1,45 +1,64 @@
 @import "variables";
-
-.kontaktDiv {
-  text-align: center;
-  margin-bottom: 60px;
-  a {
-    color: $white;
-  }
-}
-iframe {
-  @include medium {
-    margin-bottom: 60px;
-  }
-}
+@import "mixins";
 
 .kontakt {
   text-align: center;
-  .kontaktDiv {
-    @media only screen and (min-width: $breakMedium) {
-      font-size: 14px;
-      box-sizing: border-box;
-      display: inline-block;
-      width: 35%;
-      vertical-align: top;
-      background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-      height: 450px;
-      padding-top: 50px;
-    }
-    @include large {
-      font-size: 16px;
-    }
-
+  @include medium {
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    flex-wrap: wrap;
   }
-  iframe {
-    border-radius: 3px;
-    width: 100%;
+}
+
+.kontaktDiv {
+  text-align: center;
+  font-size: 13px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 25px;
+  @include medium {
+    margin-bottom: 0;
+    padding-top: 40px;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    width: 45%;
     height: 450px;
-    @include medium {
-      display: inline-block;
-      width: 60%;
-      max-width: 600px;
+  }
+  @include large {
+    font-size: 16px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+}
 
+  a {
+    color: #000;
+    @media only screen and (min-width: $breakMedium) {
+      color: $white;
     }
   }
+
+iframe {
+  border-radius: 3px;
+  width: 100%;
+  height: 450px;
+  @include medium {
+    display: inline-block;
+    width: 50%;
+    max-width: 600px;
+
+  }
+}
+.kuca {
+  width: 100%;
+  @include medium() {
+    width: 60%;
+  }
+
+}
+#kontaktFooter {
+  margin-top: 0;
 }

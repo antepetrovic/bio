@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'dist/app.min.js': ['app.js']
+          'dist/app.min.js': ['dist/built.js']
           }
         }
     },
@@ -25,23 +25,31 @@ module.exports = function(grunt) {
       watch: {
           css: {
               files: ['css/main.css', 'app.js'],
-              tasks: ['cssmin', 'uglify']
+              tasks: ['cssmin','concat', 'uglify']
           }
 
+      },
+
+      concat: {
+          options: {
+              separator: ';'
+          },
+          dist: {
+              src: ['bioenergija.js', 'app.js'],
+              dest: 'dist/built.js'
+          }
       }
-
-
   });
 
-  // Load the plugin that provides the "uglify" task.
-  //grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
 
   // Default task(s).
-  grunt.registerTask('default', ['cssmin', 'uglify','watch']);
+  grunt.registerTask('default', ['cssmin', 'concat','uglify','watch']);
 
 };
 

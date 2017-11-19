@@ -32,7 +32,7 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.5s;
   @include medium {
     width: 100%;
@@ -88,18 +88,4 @@
 
 .firstSecond {
   float: left;
-}
-
-
-.title {
-  text-align: center;
-  font-weight: 100;
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 38px;
-  font-size: 36px;
-  color: $titleColor;
-  @include medium {
-    font-size: 48px;
-  }
 }

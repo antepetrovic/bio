@@ -1,15 +1,28 @@
 @import "variables";
+@import "frames";
 
 @mixin headerImageMixin($image) {
   background-image: url($image);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 400px;
+  background-position: center center;
+  height: 335px;
+  animation: imageChange 20s linear infinite ;
   @media only screen and (min-width: $breakMedium) {
-    height: 650px;
+    height: 450px;
   }
 }
+
+//@mixin headerImageMixin() {
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  background-position: center;
+//  height: 335px;
+//  transition: imageChange 30s infinite;
+//  @media only screen and (min-width: $breakMedium) {
+//    height: 450px;
+//  }
+//}
 
 
 @mixin small() {

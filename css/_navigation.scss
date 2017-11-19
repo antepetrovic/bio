@@ -9,38 +9,62 @@ header {
   width: 100%;
   z-index: 1000;
   transition: all 1s;
+  @include medium {
+    height: 100px;
+  }
   a { color: inherit; }
 }
 
 .logoDiv {
   @include medium {
-    margin-top: 5px;
-    width: 20%;
+    width: 25%;
     display: inline-block;
+    height: 100px;
+  }
+  @media only screen and (min-width: 1000px) {
+    width: 15%;
   }
 }
 
 .navDiv {
+  box-sizing: border-box;
   @include medium {
+    padding-top: 10px;
     position: absolute;
     top:0;
-    width: 75%;
-    margin-left: 2%;
+    width: 68%;
+    margin-left: 7%;
     display: inline-block;
     text-align: center;
+    height: 100px;
+  }
+  @media only screen and (min-width: 960px) {
+    margin-left: 5%;
+  }
+  @media only screen and (min-width: 1000px) {
+    margin-left: 10%;
+    width: 75%;
+
+  }
+  @media only screen and (min-width: 1200px) {
+    margin-left: 7%;
   }
 }
 nav {
   @include medium {
-    height: 70px;
+    height: 100px;
   }
   img {
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 120px;
+    width: 150px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 0px;
+
     @include medium {
       margin-top: 0;
-      width: 150px;
+      margin-left: 0;
+      width: 246px;
+
     }
   }
   h1 {
@@ -58,22 +82,40 @@ nav {
     text-align: center;
     @include medium {
       margin-bottom: 0;
-      margin-top: 5px;
+      margin-top: 0;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      flex-wrap: wrap;
+
+    }
+    @media only screen and (min-width: 900px) {
+
+    }
+    @media only screen and (min-width: 960px) {
+      margin-top: 15px;
+    }
+    @media only screen and (min-width: 1000px) {
+      justify-content: space-between;
     }
   }
   li {
     margin-bottom: 10px;
     @include medium {
       display: inline-block;
-      margin-right: 7px;
+      margin-right: 15px;
+    }
+    @media only screen and (min-width: 900px) {
+      margin-right: 8px;
     }
     a {
       font-size: 20px;
       @include medium {
-        font-size: 17px;
+        font-size: 16px;
       }
+      @media only screen and (min-width: 1000px) {
+        font-size: 18px;
+      }
+
     }
   }
 }
@@ -87,8 +129,8 @@ nav {
   z-index: 10000;
   width: 30px;
   height: 15px;
-  top: 19px;
-  right: 10px;
+  top: 22px;
+  right: 14px;
   float: right;
   position: absolute;
   -webkit-transform:rotate(0deg);
@@ -154,4 +196,3 @@ nav {
   width: 0;
   left: 50%;
 }
-

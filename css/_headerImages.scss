@@ -1,32 +1,73 @@
 @import "variables";
 @import "mixins";
 
-
-
-
-#imgDivBioenergija {
-  @include headerImageMixin("../img/img6.jpg");
-
+.crossfade {
+  position: relative;
+  padding-top: 68.88px;
+  width: 100%;
+  height: 300px;
+  @media only screen and (min-width: $breakMedium) {
+    
+    height: 350px;
+  }
+}
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  opacity: 0;
+  left: 0;
+  top:0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  margin: 0px;
+  @media only screen and (min-width: $breakMedium) {
+    height: 100%;
+  }
 }
 
-#imgDivCestaPitanja {
-  @include headerImageMixin("../img/img6.jpg");
+.crossfade > figure:nth-child(1) {
+  background-image: url('../img/header.jpg');
 }
 
-#imgDivKontakt {
-  @include headerImageMixin("../img/img7.jpg");
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('../img/header1.jpg');
+}
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('../img/header2.jpg');
+}
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('../img/header.jpg');
+}
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('../img/header1.jpg');
 }
 
-#imgDivLicenca {
-  @include headerImageMixin("../img/img6.jpg");
+@keyframes
+imageAnimation {  0% {
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+8% {
+   animation-timing-function: ease-out;
+   opacity: 1;
+ }
+17% {
+    opacity: 1
+  }
+25% {
+    opacity: 0
+  }
+100% {
+     opacity: 0
+   }
 }
 
-#imgDivOmeni {
-  @include headerImageMixin("../img/img2.jpg");
-}
-#imgDivOmetodi {
-  @include headerImageMixin("../img/img2.jpg");
-}
-#imgDivTermini {
-  @include headerImageMixin("../img/img2.jpg");
-}
