@@ -14,115 +14,83 @@ header {
   }
   a { color: inherit; }
 }
-
-.logoDiv {
-  @include medium {
-    width: 25%;
-    display: inline-block;
-    height: 100px;
-  }
-  @media only screen and (min-width: 1000px) {
-    width: 15%;
+nav {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include medium() {
+    flex-direction: row;
   }
 }
+.logoDiv {
+  margin-right: 100%;
+  img {
+    width: 150px;
+    margin: 2px 0 0 2px;
+
+    @include medium() {
+      margin-top: 3.5px;
+      width: 229px;
+    }
+  }
+  @include medium() {
+    height: auto;
+    margin-right: 0;
+  }
+
+ }
 
 .navDiv {
   box-sizing: border-box;
-  @include medium {
-    padding-top: 10px;
-    position: absolute;
-    top:0;
-    width: 68%;
-    margin-left: 7%;
-    display: inline-block;
-    text-align: center;
-    height: 100px;
-  }
-  @media only screen and (min-width: 960px) {
-    margin-left: 5%;
-  }
-  @media only screen and (min-width: 1000px) {
-    margin-left: 10%;
-    width: 75%;
-
-  }
-  @media only screen and (min-width: 1200px) {
-    margin-left: 7%;
-  }
-}
-nav {
-  @include medium {
-    height: 100px;
-  }
-  img {
-    width: 150px;
-    margin-top: 4px;
-    margin-left: 4px;
-    margin-bottom: 0px;
-
-    @include medium {
-      margin-top: 0;
-      margin-left: 0;
-      width: 246px;
-
-    }
-  }
   h1 {
     display: none;
-    @include medium {
+    @include medium() {
+      margin:0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
       display: block;
-      margin: 0;
+    }
+    @media only screen and (min-width: 798px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
   }
   ul {
-    padding: 0;
     text-decoration: none;
     list-style-type: none;
     display: none;
     text-align: center;
-    @include medium {
-      margin-bottom: 0;
-      margin-top: 0;
+    padding: 0;
+    @include medium() {
+      margin: 0;
+      padding:0;
       display: flex;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-around;
       flex-wrap: wrap;
 
     }
-    @media only screen and (min-width: 900px) {
-
-    }
-    @media only screen and (min-width: 960px) {
-      margin-top: 15px;
-    }
-    @media only screen and (min-width: 1000px) {
-      justify-content: space-between;
-    }
   }
   li {
+    font-size: 20px;
     margin-bottom: 10px;
-    @include medium {
-      display: inline-block;
-      margin-right: 15px;
+    @include medium() {
+      font-size: 16px;
+      margin-left: 1%;
     }
     @media only screen and (min-width: 900px) {
-      margin-right: 8px;
-    }
-    a {
-      font-size: 20px;
-      @include medium {
-        font-size: 16px;
-      }
-      @media only screen and (min-width: 1000px) {
-        font-size: 18px;
-      }
-
+      font-size: 18px;
     }
   }
+  @include medium() {
+    width: 85%;
+    padding-top: 0;
+  }
 }
-.darkHeader {
-  background-color: $headerBackgroundTreehouse;
-  transition: all 1s;
-}
+
+
 
 
 #nav-icon {

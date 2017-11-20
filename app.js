@@ -1,12 +1,10 @@
 $(document).ready(function(){
-    // var fourth        = $("#fourth").position();
     var third         = $("#third").position();
     var second        = $("#second").position();
     var windowHeight  = $( window ).height();
 
     $("#nav-icon").click(function(){
         $(this).toggleClass('open');
-        $("header").toggleClass("darkHeader");
         $("ul").height(windowHeight).slideToggle("slow");
     });
 
