@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'montserratlight';
-  src: url('../fonts/Montserrat-Light.eot') format('eot'),
-  url('../fonts/Montserrat-Thin.ttf') format('ttf');
+  src: url('../fonts/Montserrat-Light.eot');
   font-weight: normal;
   font-style: normal;
 
 }
 
 * {
-  font-family: 'montserratlight', sans-serif;
+  font-family: 'montserratlight', 'Montserrat', sans-serif;
+  font-weight: 300;
 }

@@ -1,11 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'montserratlight';
-  src: url("../fonts/Montserrat-Light.eot") format("eot"), url("../fonts/Montserrat-Thin.ttf") format("ttf");
+  src: url("../fonts/Montserrat-Light.eot");
   font-weight: normal;
   font-style: normal; }
 * {
-  font-family: 'montserratlight', sans-serif; }
+  font-family: 'montserratlight', 'Montserrat', sans-serif;
+  font-weight: 300; }
 
 @keyframes Fade {
   0% {
@@ -91,6 +92,7 @@ nav {
   text-align: center;
   width: 100%;
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column; }
   @media only screen and (min-width: 768px) {
     nav {
@@ -100,7 +102,7 @@ nav {
   margin-right: 100%; }
   .logoDiv img {
     width: 150px;
-    margin: 2px 0 0 2px; }
+    margin: 3.5px 0 0 3.5px; }
     @media only screen and (min-width: 768px) {
       .logoDiv img {
         margin-top: 3.5px;
@@ -118,12 +120,23 @@ nav {
       .navDiv h1 {
         margin: 0;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+        font-size: 25px;
         text-align: center;
         display: block; } }
-    @media only screen and (min-width: 798px) {
+    @media only screen and (min-width: 792px) {
       .navDiv h1 {
-        margin-top: 15px;
+        margin-top: 10px;
+        margin-bottom: 11px; } }
+    @media only screen and (min-width: 900px) {
+      .navDiv h1 {
+        margin-bottom: 5px; } }
+    @media only screen and (min-width: 952px) {
+      .navDiv h1 {
+        margin-bottom: 0;
+        font-size: 29px; } }
+    @media only screen and (min-width: 1000px) {
+      .navDiv h1 {
         margin-bottom: 15px; } }
   .navDiv ul {
     text-decoration: none;
@@ -136,15 +149,20 @@ nav {
         margin: 0;
         padding: 0;
         display: flex;
+        display: -ms-flexbox;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap; } }
+  .navDiv .none {
+    display: block; }
+  .navDiv .flex {
+    display: flex; }
   .navDiv li {
     font-size: 20px;
     margin-bottom: 10px; }
     @media only screen and (min-width: 768px) {
       .navDiv li {
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 1%; } }
     @media only screen and (min-width: 900px) {
       .navDiv li {
@@ -253,13 +271,13 @@ nav {
   height: 300px; }
   @media only screen and (min-width: 768px) {
     .crossfade {
-      height: 350px; } }
+      height: 360px; } }
 
 .crossfade > figure {
   animation: imageAnimation 30s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 38%;
   color: transparent;
   opacity: 0;
   left: 0;
@@ -268,13 +286,15 @@ nav {
   position: absolute;
   width: 100%;
   z-index: 0;
-  margin: 0px; }
+  margin: 0; }
   @media only screen and (min-width: 768px) {
     .crossfade > figure {
       height: 100%; } }
 
 .crossfade > figure:nth-child(1) {
-  background-image: url("../img/header.jpg"); }
+  background-image: url("../img/header.jpg");
+  animation: firstImage;
+  opacity: 1; }
 
 .crossfade > figure:nth-child(2) {
   animation-delay: 6s;
@@ -292,6 +312,11 @@ nav {
   animation-delay: 24s;
   background-image: url("../img/header1.jpg"); }
 
+@keyframes firstImage {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 @keyframes imageAnimation {
   0% {
     animation-timing-function: ease-in;
@@ -327,6 +352,15 @@ nav {
     opacity: 0; }
   100% {
     opacity: 0; } }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/Montserrat-Light.eot");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  font-family: 'montserratlight', 'Montserrat', sans-serif;
+  font-weight: 300; }
+
 img {
   max-height: 650px; }
 
@@ -366,8 +400,7 @@ body {
     margin-left: 10%;
     margin-bottom: 50px;
     margin-top: 50px;
-    font-weight: 100;
-    color: #1e3443; }
+    font-weight: 100; }
   .ownerSection p {
     font-size: 16px;
     text-align: justify;
@@ -375,7 +408,7 @@ body {
     margin-left: 10%;
     width: 80%;
     line-height: 1.75;
-    font-weight: 100; }
+    font-weight: 300; }
     @media only screen and (min-width: 768px) {
       .ownerSection p {
         width: 65%;
@@ -480,7 +513,7 @@ body {
   margin-bottom: 38px;
   margin-top: 50px;
   font-size: 30px;
-  color: #1e3443; }
+  color: #45464c; }
   @media only screen and (min-width: 768px) {
     .title {
       font-size: 40px; } }
@@ -544,8 +577,8 @@ body {
   content: '\f0aa'; }
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;

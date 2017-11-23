@@ -18,6 +18,7 @@ nav {
   text-align: center;
   width: 100%;
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column;
   @include medium() {
     flex-direction: row;
@@ -27,7 +28,7 @@ nav {
   margin-right: 100%;
   img {
     width: 150px;
-    margin: 2px 0 0 2px;
+    margin: 3.5px 0 0 3.5px;
 
     @include medium() {
       margin-top: 3.5px;
@@ -48,13 +49,24 @@ nav {
     @include medium() {
       margin:0;
       margin-top: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      font-size: 25px;
       text-align: center;
       display: block;
     }
-    @media only screen and (min-width: 798px) {
-      margin-top: 15px;
-      margin-bottom: 15px;
+    @media only screen and (min-width: 792px) {
+      margin-top: 10px;
+      margin-bottom: 11px;
+    }
+    @media only screen and (min-width: 900px) {
+      margin-bottom: 5px;
+    }
+    @media only screen and (min-width: 952px) {
+      margin-bottom:0;
+      font-size: 29px;
+    }
+    @media only screen and (min-width: 1000px) {
+      margin-bottom:15px;
     }
   }
   ul {
@@ -67,17 +79,26 @@ nav {
       margin: 0;
       padding:0;
       display: flex;
+      display: -ms-flexbox;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
 
     }
   }
+
+  .none {
+    display: block;
+  }
+
+  .flex {
+    display: flex;
+  }
   li {
     font-size: 20px;
     margin-bottom: 10px;
     @include medium() {
-      font-size: 16px;
+      font-size: 14px;
       margin-left: 1%;
     }
     @media only screen and (min-width: 900px) {
@@ -89,9 +110,6 @@ nav {
     padding-top: 0;
   }
 }
-
-
-
 
 #nav-icon {
   z-index: 10000;
