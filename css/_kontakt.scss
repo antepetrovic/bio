@@ -1,64 +1,99 @@
 @import "variables";
 @import "mixins";
 
-.kontakt {
+.infoDiv {
   text-align: center;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  padding-bottom: 40px;
+  margin-bottom: 5px;
   @include medium {
-    text-align: left;
-    display: inline-block;
     width: 80%;
     margin-left: 10%;
-    flex-wrap: wrap;
+  }
+  h2 {
+    color: $white;
+    font-size: 30px;
+    padding-top: 70px;
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
-.kontaktDiv {
+form {
   text-align: center;
-  font-size: 13px;
+  display: block;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 25px;
+  padding: 50px 0 50px 0;
+  width: 100%;
+  input,textarea {
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 40px;
+    width: 80%;
+    margin: 0 0 40px 0;
+    padding-left: 5px;
+  }
+  button {
+    display: block;
+    height: 40px;
+    width: 120px;
+    margin-left: 10%;
+    background: $white;
+    font-size: 18px;
+    border: none;
+    color: #6b6b6b;
+  }
+  button:hover {
+    background: #2cb5e8;
+    color: $white;
+    border: 1px solid $white;
+  }
+  textarea {
+    box-sizing: border-box;
+    height: 80px;
+    resize: vertical;
+    max-height: 200px;
+    min-height: 80px;
+    border: none;
+    padding: 10px 0 0 5px;
+  }
   @include medium {
-    margin-bottom: 0;
-    padding-top: 40px;
-    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    width: 45%;
-    height: 450px;
-  }
-  @include large {
-    font-size: 16px;
-  }
-  h3 {
-    margin-bottom: 20px;
-  }
-}
-
-  a {
-    color: #000;
-    @media only screen and (min-width: $breakMedium) {
-      color: $white;
+    #email, #name {
+      display: inline-block;
+      width: 40%;
     }
   }
 
+}
+.kontaktDiv {
+  font-size: 15px;
+  h3 {
+    color: $white;
+  }
+  @include medium{
+    font-size: 17px;
+  }
+}
+#kontaktFooter {
+  margin-top: 0;
+}
 iframe {
-  border-radius: 3px;
   width: 100%;
-  height: 450px;
+  height: 400px;
   @include medium {
-    display: inline-block;
-    width: 50%;
-    max-width: 600px;
-
+    width: 80%;
+    margin-left: 10%;
   }
 }
 .kuca {
   width: 100%;
   @include medium() {
-    width: 60%;
+    width: 50%;
+    margin-left: 10%;
+  }
+  @include large {
+    width: 40%;
   }
 
 }
-#kontaktFooter {
-  margin-top: 0;
-}
+
