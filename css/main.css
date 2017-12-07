@@ -872,8 +872,6 @@ iframe {
       font-size: 17px; }
       .termini div {
         display: inline-block;
-        vertical-align: top; }
-      .termini > div:nth-of-type(1) {
-        margin-right: 50px; } }
+        vertical-align: top; } }
 
 /*# sourceMappingURL=main.css.map */
