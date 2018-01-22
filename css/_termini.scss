@@ -4,36 +4,50 @@
 
 
 .termini {
-  height: 400px;
+  height: 500px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 13px;
   h1 {
     margin-bottom: 40px;
   }
+
   > div:nth-of-type(1) { //termini odrzavanja studeni
      margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 35px;
+    }
+
    }
+
   > div:nth-of-type(2) { //termini odrzavanja prosinac
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 35px;
+    }
   }
+
   > h3:nth-of-type(1) {
       margin-bottom: 0;
 
   }
+
   div h3:first-child {
     font-size: 17px;
   }
 
   @include medium() {
     font-size: 17px;
+
     div {
       display: inline-block;
       vertical-align: top;
     }
+
     > div:nth-of-type(1) {
       //margin-right: 50px;
     }
-
   }
 }

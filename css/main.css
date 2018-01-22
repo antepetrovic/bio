@@ -853,7 +853,7 @@ iframe {
   100% {
     opacity: 0; } }
 .termini {
-  height: 400px;
+  height: 500px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 13px; }
@@ -861,8 +861,14 @@ iframe {
     margin-bottom: 40px; }
   .termini > div:nth-of-type(1) {
     margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .termini > div:nth-of-type(1) {
+        margin-right: 35px; } }
   .termini > div:nth-of-type(2) {
     margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .termini > div:nth-of-type(2) {
+        margin-left: 35px; } }
   .termini > h3:nth-of-type(1) {
     margin-bottom: 0; }
   .termini div h3:first-child {
