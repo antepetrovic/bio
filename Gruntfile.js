@@ -10,7 +10,6 @@ module.exports = function(grunt) {
           ext: '.min.css'
       }
     },
-
     uglify: {
       options: {
       mangle: false
@@ -21,15 +20,12 @@ module.exports = function(grunt) {
           }
         }
     },
-
       watch: {
           css: {
               files: ['css/main.css', 'app.js'],
               tasks: ['cssmin','concat', 'uglify']
           }
-
       },
-
       concat: {
           options: {
               separator: ';'
@@ -41,20 +37,13 @@ module.exports = function(grunt) {
       }
   });
 
-
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
-
-  // Default task(s).
-
   grunt.registerTask('build', ['cssmin', 'concat','uglify']);
   grunt.registerTask('default', ['cssmin', 'concat','uglify','watch']);
-
-
-
 };
 
 
