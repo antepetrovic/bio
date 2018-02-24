@@ -114,29 +114,27 @@ nav {
 
 .navDiv {
   box-sizing: border-box; }
-  .navDiv h1 {
+  .navDiv h2 {
     display: none; }
     @media only screen and (min-width: 768px) {
-      .navDiv h1 {
-        margin: 0;
-        margin-top: 10px;
-        margin-bottom: 8px;
+      .navDiv h2 {
+        margin: 10px 0 8px 0;
         font-size: 25px;
         text-align: center;
         display: block; } }
     @media only screen and (min-width: 792px) {
-      .navDiv h1 {
+      .navDiv h2 {
         margin-top: 10px;
         margin-bottom: 11px; } }
     @media only screen and (min-width: 900px) {
-      .navDiv h1 {
+      .navDiv h2 {
         margin-bottom: 5px; } }
     @media only screen and (min-width: 952px) {
-      .navDiv h1 {
+      .navDiv h2 {
         margin-bottom: 0;
         font-size: 29px; } }
     @media only screen and (min-width: 1000px) {
-      .navDiv h1 {
+      .navDiv h2 {
         margin-bottom: 15px; } }
   .navDiv ul {
     text-decoration: none;

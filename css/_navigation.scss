@@ -44,12 +44,10 @@ nav {
 
 .navDiv {
   box-sizing: border-box;
-  h1 {
+  h2 {
     display: none;
     @include medium() {
-      margin:0;
-      margin-top: 10px;
-      margin-bottom: 8px;
+      margin: 10px 0 8px 0;
       font-size: 25px;
       text-align: center;
       display: block;
