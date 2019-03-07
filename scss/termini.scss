@@ -2,12 +2,18 @@
 @import "mixins";
 @import "frames";
 
-
 .termini {
   height: 500px;
   padding-bottom: 30px;
   text-align: center;
   font-size: 13px;
+
+  .alert {
+    color: #f35b5d;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   h1 {
     margin-bottom: 40px;
   }
@@ -44,10 +50,6 @@
     div {
       display: inline-block;
       vertical-align: top;
-    }
-
-    > div:nth-of-type(1) {
-      //margin-right: 50px;
     }
   }
 }

@@ -113,24 +113,10 @@ body {
     width: 65%;
   }
 }
-@include medium {
-  #mainText:after {
-    content: "";
-  }
-  #metodaText:after {
-    content: "Terapija ima cjelovit, sveobuhvatan i blagotvoran učinak na čovjeka te pomaže u psihofizičkom iscjeljenju i u krajnjem cilju – poboljšanju kvalitete života. 
-    Sve što živi (čovjek, životinja ili biljka) posjeduje bioenergiju. Do bolesti dolazi kad je ona u disbalansu ili je blokirana u svom prirodnom stanju ili protoku. Za uspostavu prirodnog stanja i protoka bioenergije pobrinut će se iskusni bioterapeuti.";
-  }
-  #bioenergijaText:after {
-    content: "";
-  }
-  #omeniText:after {
-    content:"";
-  }
 
-}
 #licencaDiv {
   text-align: center;
+  
   .vlastaPhoto,.licencaPhoto {
     width: 90%;
   }
